@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("images/paris.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 1px 4px 12px 4px #121212;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.number {
+    --rotation: 0;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    transform: rotate(var(--rotation));
+}
+
+.number1 {
+    --rotation: 30deg;
+}
+
+.number2 {
+    --rotation: 60deg;
+}
+
+.number3 {
+    --rotation: 90deg;
+}
+
+.number4 {
+    --rotation: 120deg;
+}
+
+.number5 {
+    --rotation: 150deg;
+}
+
+.number6 {
+    --rotation: 180deg;
+}
+
+.number7 {
+    --rotation: 210deg;
+}
+
+.number8 {
+    --rotation: 240deg;
+}
+
+.number9 {
+    --rotation: 270deg;
+}
+
+.number10 {
+    --rotation: 300deg;
+}
+
+.number11 {
+    --rotation: 330deg;
+}
+
+.hand {
+    --rotation: 0;
+    height: 40%;
+    width: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 10;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    transform: translateX(-20%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+.minute {
+    width: 7px;
+    height: 40%;
+    background-color: white;
+}
+
+.hour {
+    width: 10px;
+    height: 35%;
+    background-color: white;
+}
+
+
+
+.number13 {
+    --rotation: 6deg;
+    font-size: 6px;
+}
+
+.number14 {
+    --rotation: 12deg;
+    font-size: 6px;
+}
+
+.number15 {
+    --rotation: 18deg;
+    font-size: 6px;
+}
+
+.number16 {
+    --rotation: 24deg;
+    font-size: 6px;
+}
+
+.number17 {
+    --rotation: 30deg;
+    font-size: 8px;
+    display: none;
+}
+
+.number18 {
+    --rotation: 36deg;
+    font-size: 6px;
+}
+
+.number19 {
+    --rotation: 42deg;
+    font-size: 6px;
+}
+
+.number20 {
+    --rotation: 48deg;
+    font-size: 6px;
+}
+
+.number21 {
+    --rotation: 54deg;
+    font-size: 6px;
+}
+
+.number23 {
+    --rotation: 60deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number24 {
+    --rotation: 66deg;
+    font-size: 6px;
+}
+
+.number25 {
+    --rotation: 72deg;
+    font-size: 6px;
+}
+
+.number26 {
+    --rotation: 78deg;
+    font-size: 6px;
+}
+
+.number27 {
+    --rotation: 84deg;
+    font-size: 6px;
+}
+
+.number28 {
+    --rotation: 90deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number29 {
+    --rotation: 96deg;
+    font-size: 6px;
+}
+
+.number30 {
+    --rotation: 102deg;
+    font-size: 6px;
+}
+
+.number31 {
+    --rotation: 108deg;
+    font-size: 6px;
+}
+
+.number32 {
+    --rotation: 114deg;
+    font-size: 6px;
+}
+
+.number33 {
+    --rotation: 120deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number34 {
+    --rotation: 126deg;
+    font-size: 6px;
+}
+
+.number35 {
+    --rotation: 132deg;
+    font-size: 6px;
+}
+
+.number36 {
+    --rotation: 138deg;
+    font-size: 6px;
+}
+
+.number37 {
+    --rotation: 144deg;
+    font-size: 6px;
+}
+
+.number38 {
+    --rotation: 150deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number39 {
+    --rotation: 156deg;
+    font-size: 6px;
+}
+
+.number40 {
+    --rotation: 162deg;
+    font-size: 6px;
+}
+
+.number41 {
+    --rotation: 168deg;
+    font-size: 6px;
+}
+
+.number42 {
+    --rotation: 174deg;
+    font-size: 6px;
+}
+
+.number43 {
+    --rotation: 180deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number44 {
+    --rotation: 186deg;
+    font-size: 6px;
+}
+
+.number45 {
+    --rotation: 192deg;
+    font-size: 6px;
+}
+
+.number46 {
+    --rotation: 198deg;
+    font-size: 6px;
+}
+
+.number47 {
+    --rotation: 204deg;
+    font-size: 6px;
+}
+
+.number48 {
+    --rotation: 210deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number49 {
+    --rotation: 216deg;
+    font-size: 6px;
+}
+
+.number50 {
+    --rotation: 222deg;
+    font-size: 6px;
+}
+
+.number51 {
+    --rotation: 228deg;
+    font-size: px;
+}
+
+.number52 {
+    --rotation: 234deg;
+    font-size: 6px;
+}
+
+.number53 {
+    --rotation: 240deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number54 {
+    --rotation: 246deg;
+    font-size: 6px;
+}
+
+.number55 {
+    --rotation: 252deg;
+    font-size: 6px;
+}
+
+.number56 {
+    --rotation: 258deg;
+    font-size: 6px;
+}
+
+.number57 {
+    --rotation: 264deg;
+    font-size: 6px;
+}
+
+.number58 {
+    --rotation: 270deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number59 {
+    --rotation: 276deg;
+    font-size: 6px;
+}
+
+.number60 {
+    --rotation: 282deg;
+    font-size: 6px;
+}
+
+.number61 {
+    --rotation: 288deg;
+    font-size: 6px;
+}
+
+.number62 {
+    --rotation: 294deg;
+    font-size: 6px;
+}
+
+.number63 {
+    --rotation: 300deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number64 {
+    --rotation: 306deg;
+    font-size: 6px;
+}
+
+.number65 {
+    --rotation: 312deg;
+    font-size: 6px;
+}
+
+.number66 {
+    --rotation: 318deg;
+    font-size: 6px;
+}
+
+.number67 {
+    --rotation: 324deg;
+    font-size: 6px;
+}
+
+.number68 {
+    --rotation: 330deg;
+    font-size: 6px;
+    display: none;
+}
+
+.number69 {
+    --rotation: 336deg;
+    font-size: 6px;
+}
+
+.number70 {
+    --rotation: 342deg;
+    font-size: 6px;
+}
+
+.number71 {
+    --rotation: 348deg;
+    font-size: 6px;
+}
+
+.number72 {
+    --rotation: 354deg;
+    font-size: 6px;
+}
+
+
+/**** DIGITAL CLOCK ****/
+
+
+
+.wrapper {
+    width: 230px;
+    height: 70px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 20px;
+    gap: 12px;
+    box-shadow: 0px 6px 17px 5px #000000;
+}
+
+.digit-gmt {
+    font-size: 18px;
+    transform: translateY(-15%);
+}
